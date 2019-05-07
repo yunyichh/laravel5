@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/user',"UserController@index");
+Route::get('/user/user',"UserController@user");
+Route::get('/hello', function () {
+    return 'Hello, Welcome to LaravelAcademy.org';
+});
